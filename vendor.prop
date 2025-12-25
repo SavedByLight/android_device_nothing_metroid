@@ -1,0 +1,9 @@
+# USB
+vendor.usb.controller=a600000.dwc3
+vendor.usb.use_ffs_mtp=1
+
+ro.hardware.keystore_desede=true
+
+ro.recovery.usb.adb.pid=D001
+ro.recovery.usb.fastboot.pid=4EE0
+ro.recovery.usb.vid=18D1
