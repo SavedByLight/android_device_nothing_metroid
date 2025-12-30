@@ -50,6 +50,6 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,device/nothing/metroid/prebuilt/modules,$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/modules) \
     $(LOCAL_PATH)/prebuilt/fstab.default:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.default
