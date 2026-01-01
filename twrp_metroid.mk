@@ -18,5 +18,6 @@ PRODUCT_MANUFACTURER := qualcomm
 PRODUCT_GMS_CLIENTID_BASE := android-nothing
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="qssi_64-user 16 BQ2A.250721.001-BP2A.250605.031.A3 2511171909 release-keys" \
-    BuildFingerprint := qti/qssi_64/qssi_64:16/BQ2A.250721.001-BP2A.250605.031.A3/2511171909:user/release-keys
+    PRIVATE_BUILD_DESC="Metroid-user 15 AQ3A.250728.001 2511171909 dev-keys"
+
+BUILD_FINGERPRINT := Nothing/Metroid/Metroid:15/AQ3A.250728.001/2511171909:user/release-keys
