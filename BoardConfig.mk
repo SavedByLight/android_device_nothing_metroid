@@ -77,7 +77,6 @@ BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 67108864
 BOARD_SUPER_PARTITION_SIZE := 9126805504 # TODO: Fix hardcoded value
 BOARD_SUPER_PARTITION_GROUPS := qualcomm_dynamic_partitions
 BOARD_QUALCOMM_DYNAMIC_PARTITIONS_PARTITION_LIST := \
-    system_dlkm \
     system_ext \
     system \
     vendor_dlkm \
