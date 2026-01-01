@@ -1,0 +1,20 @@
+/boot                   /dev/block/by-name/boot                   emmc    flags=display="Boot";slotselect;flashimg=1;backup=1
+/init_boot              /dev/block/by-name/init_boot              emmc    flags=display="init_boot"slotselect;flashimg=1;backup=1
+/vendor_boot            /dev/block/by-name/vendor_boot            emmc    flags=display="vendor_boot";slotselect;flashimg=1;backup=1
+/dtbo                   /dev/block/by-name/dtbo                   emmc    flags=display="dtbo";slotselect;flashimg=1;backup=1
+/recovery               /dev/block/by-name/recovery               emmc    flags=display="recovery"slotselect;flashimg=1;backup=1
+/vendor/firmware_mnt    /dev/block/bootdevice/by-name/modem       vfat    flags=display="Modem";slotselect;backup=1
+/vendor/dsp             /dev/block/bootdevice/by-name/dsp         ext4    flags=display="dsp";slotselect;backup=1
+/vendor/bt_firmware     /dev/block/bootdevice/by-name/bluetooth   vfat    flags=display="Bluetooth";slotselect;backup=1
+/mnt/vendor/qmcs        /dev/block/bootdevice/by-name/qmcs        vfat    flags=display="qmcs";backup=1
+/mnt/vendor/spunvm      /dev/block/bootdevice/by-name/spunvm      vfat    flags=display="spunvm";backup=1
+/mnt/product/nt_log     /dev/block/by-name/nt_log                 ext4    flags=display="product_nt_log";backup=1
+/mnt/vendor/nt_log      /dev/block/by-name/nt_log                 ext4    flags=display="vendor_nt_log";backup=1
+
+# Data
+/metadata       /dev/block/by-name/metadata               f2fs    flags=display="metadata";backup=1
+/data           /dev/block/bootdevice/by-name/userdata    f2fs    flags=display="data";backup=1
+
+# External
+/devices/platform/soc/8804000.sdhci/mmc_host*             /storage/sdcard1         vfat      nosuid,nodev               wait,voldmanaged=sdcard1:auto,encryptable=footer
+/devices/platform/soc/*.ssusb/*.dwc3/xhci-hcd.*.auto*     /storage/usbotg          vfat      nosuid,nodev               wait,voldmanaged=usbotg:auto
