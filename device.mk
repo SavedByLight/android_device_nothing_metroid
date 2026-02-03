@@ -5,7 +5,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
 # Boot control
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.2-impl-qti.recovery \
+    android.hardware.boot@1.1-impl-qti.recovery \
     bootctrl.sun.recovery
 
 PRODUCT_PACKAGES += \
