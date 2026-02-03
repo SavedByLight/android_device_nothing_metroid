@@ -33,7 +33,7 @@ cc_defaults {
 cc_library {
     name: "bootctrl.sun",
     defaults: ["bootctrl_hal_defaults"],
-    static_libs: ["libgptutils.corfur"],
+    static_libs: ["libgptutils.metroid"],
 }
 
 cc_library_shared {
